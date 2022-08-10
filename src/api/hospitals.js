@@ -24,7 +24,19 @@ const GetHospitals = () => {
       }
 
       return hospitals;
-    }).catch(() => undefined);
+    }).catch((err) => {
+      fetch(`${url}:${port}/err`, {
+        ...configFetch,
+        method: 'POST',
+        body: JSON.stringify({
+          err,
+          url: urlFetch,
+          config: configFetch,
+        }),
+      });
+
+      return undefined;
+    });
 };
 
 export {
