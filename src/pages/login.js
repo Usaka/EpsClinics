@@ -22,7 +22,7 @@ function Login() {
         return;
       }
 
-      nav.navigate('USER');
+      nav.navigate('USER', { userData });
     });
   };
 

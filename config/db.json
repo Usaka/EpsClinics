@@ -98,6 +98,7 @@
         {
             "id": 1,
             "name": "Hospital Joaquín Paz Borrero",
+            "eps": "1|2|3",
             "address": "Calle 72A # 7A-00",
             "lat": "3.465",
             "lon": "-76.482",
@@ -106,6 +107,7 @@
         {
             "id": 2,
             "name": "Hospital San Juan de Dios",
+            "eps": "4|5|6",
             "address": "Carrera 4n#17-67",
             "lat": "3.498",
             "lon": "-76.493",
@@ -114,6 +116,7 @@
         {
             "id": 3,
             "name": "Hospital universitario sede norte",
+            "eps": "",
             "address": "Avenida 3ra N#32An-40",
             "lat": "3.47",
             "lon": "-76.522",
@@ -122,6 +125,7 @@
         {
             "id": 4,
             "name": "Hospital Universitario del Valle Evaristo Garcia ESE",
+            "eps": "1|2|3",
             "address": "Calle 5 #36-00",
             "lat": "3.43",
             "lon": "-76.545",
@@ -130,6 +134,7 @@
         {
             "id": 5,
             "name": "Hospital Carlos Carmona Montoya",
+            "eps": "1|2|3",
             "address": "Calle 39",
             "lat": "3.41",
             "lon": "-76.515",
@@ -138,6 +143,7 @@
         {
             "id": 6,
             "name": "Hospital Isaias Duarte Cansino",
+            "eps": "1|2|3",
             "address": "Carrera 28E3",
             "lat": "3.412",
             "lon": "-76.485",
@@ -146,6 +152,7 @@
         {
             "id": 7,
             "name": "Hospital Carlos Holmes Trujillo",
+            "eps": "1|2|3",
             "address": "Calle 72U#28e-00",
             "lat": "3.419",
             "lon": "-76.494",
@@ -154,6 +161,7 @@
         {
             "id": 7,
             "name": "Hospital Cañaveralejo",
+            "eps": "1|2|3",
             "address": "Carrera 44 #9C-178",
             "lat": "3.416",
             "lon": "-76.538",
@@ -162,6 +170,7 @@
         {
             "id": 8,
             "name": "Hospital Departamental Mario Correa Rengifo",
+            "eps": "1|2|3",
             "address": "Carrera 78#2A-00",
             "lat": "3.393",
             "lon": "-76.558",
@@ -170,6 +179,7 @@
         {
             "id": 8,
             "name": "Hospital Militar Regional de Occidente",
+            "eps": "1|2|3",
             "address": "Calle 4#87-41",
             "lat": "3.379",
             "lon": "-76.546",
@@ -178,6 +188,7 @@
         {
             "id": 9,
             "name": "Hospital Universitario fundación valle del Lili",
+            "eps": "1|2|3",
             "address": "Carrera 98# 18-49",
             "lat": "3.373",
             "lon": "-76.526",
@@ -186,6 +197,7 @@
         {
             "id": 12,
             "name": "Centro de Salud La Campiña",
+            "eps": "1|2|3",
             "address": "Avenida 9N #2a-98",
             "lat": "3.483",
             "lon": "-76.53",
@@ -194,6 +206,7 @@
         {
             "id": 13,
             "name": "IPS Vivir Central de especialistas",
+            "eps": "1|2|3",
             "address": "Avenida 5A N#46N-77",
             "lat": "3.483",
             "lon": "-76.523",
@@ -202,6 +215,7 @@
         {
             "id": 14,
             "name": "IPS Sura Flora",
+            "eps": "1|2|3",
             "address": "Calle 38N",
             "lat": "3.477",
             "lon": "-76.525",
@@ -210,6 +224,7 @@
         {
             "id": 15,
             "name": "Clinica de los rRmedios",
+            "eps": "1|2|3",
             "address": "Carrera 2 #24-157",
             "lat": "3.46",
             "lon": "-76.521",
@@ -218,6 +233,7 @@
         {
             "id": 16,
             "name": "Hospital San Juan de Dios",
+            "eps": "1|2|3",
             "address": "Carrera 4#17-67",
             "lat": "3.455",
             "lon": "-76.528",
@@ -226,6 +242,7 @@
         {
             "id": 18,
             "name": "Clinica Sebastian de Belalcazar",
+            "eps": "1|2|3",
             "address": "Avenida 4 N # 7N -81",
             "lat": "3.455",
             "lon": "-76.537",
@@ -234,6 +251,7 @@
         {
             "id": 19,
             "name": "Clinica Comfenalco",
+            "eps": "1|2|3",
             "address": "Carrera 6 #6-63",
             "lat": "3.449",
             "lon": "-76.536",
@@ -242,6 +260,7 @@
         {
             "id": 20,
             "name": "Clinica la Nuestra",
+            "eps": "1|2|3",
             "address": "Calle 10A#50",
             "lat": "3.425",
             "lon": "-76.533",
@@ -250,6 +269,7 @@
         {
             "id": 21,
             "name": "Clinica Rey David",
+            "eps": "1|2|3",
             "address": "Carrera 34#7-00",
             "lat": "3.427",
             "lon": "-76.538",
@@ -258,6 +278,7 @@
         {
             "id": 22,
             "name": "Clinica unidos por la vida",
+            "eps": "1|2|3",
             "address": "Calle 9 #29",
             "lat": "3.429",
             "lon": "-76.536",
@@ -266,6 +287,7 @@
         {
             "id": 24,
             "name": "Clinica la Esperanza",
+            "eps": "1|2|3",
             "address": "Calle 9#44-105",
             "lat": "3.416",
             "lon": "-76.54",
@@ -274,6 +296,7 @@
         {
             "id": 26,
             "name": "Clinica fundación Valle del LLili sede limonar",
+            "eps": "1|2|3",
             "address": "Carrera 70#18-75",
             "lat": "3.393",
             "lon": "-76.526",
@@ -282,6 +305,7 @@
         {
             "id": 27,
             "name": "Policlinica Sur",
+            "eps": "1|2|3",
             "address": "Carrera 48#86-188",
             "lat": "3.378",
             "lon": "-76.517",
@@ -290,6 +314,7 @@
         {
             "id": 28,
             "name": "Comfandi el Prado",
+            "eps": "1|2|3",
             "address": "Transversal 25",
             "lat": "3.435",
             "lon": "-76.516",
@@ -298,6 +323,7 @@
         {
             "id": 28,
             "name": "IPS Sura Tequendama",
+            "eps": "1|2|3",
             "address": "Calle 5 #39-185",
             "lat": "3.423",
             "lon": "-76.547",
@@ -306,6 +332,7 @@
         {
             "id": 29,
             "name": "Clinica Tequendama",
+            "eps": "1|2|3",
             "address": "Calle 5b #42-15",
             "lat": "3.419",
             "lon": "-76.546",
@@ -314,6 +341,7 @@
         {
             "id": 30,
             "name": "Clinica imbanaco sede principal",
+            "eps": "1|2|3",
             "address": "Carrera 38bis #5b2-4",
             "lat": "3.426",
             "lon": "-76.545",

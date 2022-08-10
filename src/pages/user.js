@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 import { Picker } from '@react-native-picker/picker';
+import { useRoute } from '@react-navigation/native';
 
 import HospitalCard from '../components/elements/HospitalCard';
 import {
@@ -19,6 +20,9 @@ export default function User() {
   const [epsList, setEpsList] = useState([]);
   const [eps, setEps] = useState('');
   const [position, setPosition] = useState();
+  const route = useRoute();
+
+  const { userData } = route.params;
 
   useEffect(() => {
     if (epsList.length === 0) {
@@ -77,7 +81,7 @@ export default function User() {
 
           if (eps) {
             console.log('->', eps);
-            hospitalData = hospitalsList.filter((hols) => hols.eps === '' || hols.eps.split('|').includes(eps.toString()));
+            hospitalData = hospitalsList.filter((hols) => hols.eps === '' || hols.eps?.split('|').includes(eps.toString()));
           }
 
           console.log(hospitalData.length);
@@ -121,7 +125,7 @@ export default function User() {
             Identificación:
           </Text>
           <Text style={Fonts.fontGray}>
-            111
+            {userData.id}
           </Text>
         </View>
         <View style={[Containers.fRow]}>
@@ -129,18 +133,22 @@ export default function User() {
             Nombre del usuario:
           </Text>
           <Text style={Fonts.fontGray}>
-            111
+            {userData.name}
           </Text>
         </View>
         {hospitals.length === 0 ? (
           <View>
             <View style={[Spacing.mt10]}>
               <Text style={Fonts.fontLink}>
-                Indicanos que EPS tienes:
+                Indicanos que EPS tienes actualmente:
               </Text>
               <Picker
                 selectedValue={eps}
                 onValueChange={(itemValue) => setEps(itemValue)}
+                style={[Spacing.mt5, Fonts.fontGray, {
+                  backgroundColor: '#eeeeff',
+                  borderRadius: 10,
+                }]}
               >
                 {epsList.length > 0 && (
                   epsList.map((item) => <Picker.Item label={item.name} value={item.id} />)
