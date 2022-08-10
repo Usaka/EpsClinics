@@ -77,14 +77,14 @@ export default function User() {
           }
 
           let hospitalData = hospitalsList;
-          console.log(hospitalData.length);
 
           if (eps) {
-            console.log('->', eps);
             hospitalData = hospitalsList.filter((hols) => hols.eps === '' || hols.eps?.split('|').includes(eps.toString()));
           }
 
-          console.log(hospitalData.length);
+          if (!hospitalData) {
+            AlertOk('Hospitales Cercanos', 'No hay hospitales cercanos para esta EPS', 'Reintentar');
+          }
 
           const hospitalsListDistance = hospitalData.map((hospital) => {
             const theta = position.lon - hospital.lon;
@@ -179,6 +179,10 @@ export default function User() {
                     name={hospital.name}
                     address={hospital.address}
                     distance={hospital.distance}
+                    lat={hospital.lat}
+                    lon={hospital.lon}
+                    userLat={position.lat}
+                    userLon={position.lon}
                   />
                 ))}
               </ScrollView>

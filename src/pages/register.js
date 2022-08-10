@@ -78,7 +78,7 @@ export default function Register() {
         </View>
         <View>
           <Text style={[Fonts.fontGray]}>
-            Usuario
+            Nombre de Usuario
           </Text>
           <TextInput
             style={[Containers.input]}

@@ -1,5 +1,5 @@
-const url = 'http://192.168.1.60';
-const port = 3000;
+const url = 'http://animalgeek.sytes.net';
+const port = 11005;
 
 const config = {
   headers: {

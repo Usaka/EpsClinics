@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Pages from '../pages';
 import Modals from '../components/modals/modal';
+import ModalHospital from '../components/modals/modalHospital';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +28,7 @@ function Routes() {
         </Stack.Group>
         <Stack.Group screenOptions={{ presentation: 'transparentModal' }}>
           <Stack.Screen name="MODAL" component={Modals} options={{ headerShown: false }} />
+          <Stack.Screen name="MODALHOSPITAL" component={ModalHospital} options={{ headerShown: false }} />
         </Stack.Group>
       </Stack.Navigator>
     </NavigationContainer>

@@ -13,6 +13,9 @@ const spacing = StyleSheet.create({
   mv1: {
     marginVertical: 10,
   },
+  ml2: {
+    marginLeft: 20,
+  },
   mr2: {
     marginRight: 20,
   },

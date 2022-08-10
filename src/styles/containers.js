@@ -40,6 +40,13 @@ const containers = StyleSheet.create({
     borderRadius: 25,
     backgroundColor: '#ffffff',
   },
+  cardViewHospital: {
+    display: 'flex',
+    width: '75%',
+    paddingBottom: 20,
+    borderRadius: 25,
+    backgroundColor: '#ffffff',
+  },
   cardHospital: {
     borderBottomWidth: 1,
     borderBottomColor: '#c1c1c1',
@@ -77,6 +84,19 @@ const containers = StyleSheet.create({
     width: 80,
     height: 80,
     borderRadius: 20,
+  },
+  imageFull: {
+    width: '100%',
+    height: 250,
+    borderRadius: 20,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+  },
+  circleBtn: {
+    width: 80,
+    height: 80,
+    backgroundColor: '#00FFFF',
+    borderRadius: 100,
   },
 });
 

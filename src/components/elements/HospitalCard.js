@@ -4,15 +4,28 @@ import {
   View, Text, TouchableOpacity, Image,
 } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
 import {
   Containers, Fonts, Spacing,
 } from '../../styles';
 
 function HospitalCard({
-  id, image, name, address, distance,
+  id, image, name, address, distance, lat, lon, userLat, userLon,
 }) {
+  const nav = useNavigation();
+
+  const GoHospital = (hospital) => {
+    nav.navigate('MODALHOSPITAL', { hospital, position: { userLat, userLon } });
+  };
+
   return (
-    <TouchableOpacity key={id} style={[Containers.cardHospital, Containers.fRow]}>
+    <TouchableOpacity
+      key={id}
+      style={[Containers.cardHospital, Containers.fRow]}
+      onPress={() => GoHospital({
+        id, image, name, address, distance, lat, lon, userLat, userLon,
+      })}
+    >
       <View>
         <Image
           source={{ uri: `${image}` }}
@@ -40,6 +53,10 @@ HospitalCard.propTypes = {
   name: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
   distance: PropTypes.number.isRequired,
+  lat: PropTypes.number.isRequired,
+  lon: PropTypes.number.isRequired,
+  userLat: PropTypes.number.isRequired,
+  userLon: PropTypes.number.isRequired,
 };
 
 export default HospitalCard;

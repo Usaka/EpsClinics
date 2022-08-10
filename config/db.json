@@ -1,23 +1,6 @@
 {
     "users": [
         {
-            "id": 1,
-            "name": "Breyner Albarracin",
-            "user": "Breyner",
-            "pass": "1234"
-        },
-        {
-            "id": 2,
-            "user": "GGGG",
-            "pass": "1234"
-        },
-        {
-            "id": 3
-        },
-        {
-            "id": 4
-        },
-        {
             "id": "11",
             "user": "Gg",
             "name": "G",
