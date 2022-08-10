@@ -72,7 +72,17 @@ export default function User() {
             AlertOk('Hospitales Cercanos', 'No hay hospitales cercanos para esta EPS', 'Reintentar');
           }
 
-          const hospitalsListDistance = hospitalsList.map((hospital) => {
+          let hospitalData = hospitalsList;
+          console.log(hospitalData.length);
+
+          if (eps) {
+            console.log('->', eps);
+            hospitalData = hospitalsList.filter((hols) => hols.eps === '' || hols.eps.split('|').includes(eps.toString()));
+          }
+
+          console.log(hospitalData.length);
+
+          const hospitalsListDistance = hospitalData.map((hospital) => {
             const theta = position.lon - hospital.lon;
             let distance = (Math.sin(deg2rad(position.lat))
             * Math.sin(deg2rad(hospital.lat))) + (Math.cos(deg2rad(position.lat))
@@ -132,7 +142,7 @@ export default function User() {
                 selectedValue={eps}
                 onValueChange={(itemValue) => setEps(itemValue)}
               >
-                {epsList.length > 0 ?? (
+                {epsList.length > 0 && (
                   epsList.map((item) => <Picker.Item label={item.name} value={item.id} />)
                 )}
               </Picker>
